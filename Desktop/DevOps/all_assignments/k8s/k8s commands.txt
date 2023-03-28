@@ -1,0 +1,57 @@
+kubectl is a command-line tool that is used to interact with Kubernetes clusters. It provides a wide range of commands for managing various aspects of a Kubernetes cluster. Here are some commonly used kubectl commands:
+
+Cluster Management
+kubectl cluster-info - display the cluster information
+kubectl config view - view the current kubeconfig file
+kubectl config use-context CONTEXT_NAME - switch the active context to the specified context
+kubectl get nodes - display information about the nodes in the cluster
+kubectl get pods - display information about the pods in the cluster
+Deployment Management
+kubectl create deployment NAME --image=IMAGE_NAME - create a deployment from an image
+kubectl get deployment - display information about the deployments in the cluster
+kubectl rollout status deployment NAME - display the rollout status of a deployment
+kubectl scale deployment NAME --replicas=NUMBER_OF_REPLICAS - scale a deployment to the specified number of replicas
+Service Management
+kubectl expose deployment NAME --port=PORT_NUMBER --target-port=TARGET_PORT_NUMBER --type=SERVICE_TYPE - expose a deployment as a service with the specified ports and type
+kubectl get service - display information about the services in the cluster
+kubectl delete service NAME - delete a service
+Configuration Management
+kubectl create configmap NAME --from-literal=KEY=VALUE - create a configmap from a literal value
+kubectl create secret generic NAME --from-literal=KEY=VALUE - create a secret from a literal value
+kubectl get configmap - display information about the configmaps in the cluster
+kubectl get secret - display information about the secrets in the cluster
+Debugging and Troubleshooting
+kubectl logs POD_NAME - display the logs of a pod
+kubectl exec -it POD_NAME -- /bin/bash - open a shell in a running pod
+kubectl describe pod POD_NAME - display detailed information about a pod
+kubectl describe deployment NAME - display detailed information about a deployment
+These are just a few examples of the many commands available with kubectl. For more information, you can refer to the official kubectl documentation.
+
+
+
+
+guru raj
+minikube commands
+minikube is a tool that allows you to run a single-node Kubernetes cluster on your local machine. It is useful for testing and development purposes. Here are some commonly used minikube commands:
+
+Starting and Stopping Minikube
+minikube start - start the Minikube cluster
+minikube stop - stop the Minikube cluster
+minikube delete - delete the Minikube cluster
+Configuring Minikube
+minikube config set KEY VALUE - set a configuration value for Minikube
+minikube config get KEY - display the value of a configuration key
+minikube config view - display the current Minikube configuration
+Interacting with Minikube
+minikube dashboard - open the Kubernetes dashboard in a browser
+minikube ip - display the IP address of the Minikube cluster
+minikube ssh - open an SSH session to the Minikube virtual machine
+Deploying Applications
+kubectl create deployment NAME --image=IMAGE_NAME - create a deployment from an image
+kubectl expose deployment NAME --port=PORT_NUMBER --target-port=TARGET_PORT_NUMBER --type=SERVICE_TYPE - expose a deployment as a service with the specified ports and type
+kubectl get service - display information about the services in the cluster
+Managing Addons
+minikube addons list - display the list of available addons
+minikube addons enable ADDON_NAME - enable the specified addon
+minikube addons disable ADDON_NAME - disable the specified addon
+These are just a few examples of the many commands available with minikube. For more information, you can refer to the official minikube documentation.
